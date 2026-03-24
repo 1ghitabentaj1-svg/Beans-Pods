@@ -6,7 +6,7 @@ import pandas as pd
 import seaborn as  sns
 from pandas.plotting import scatter_matrix
 
-st.sidebar.title(" Statistiques descrptives: ")
+st.sidebar.title(" Statistiques descriptives: ")
 menu = st.sidebar.selectbox("Navigation",[ 'Les Données','Aperçu du Jeu de Données','Statistiques','Corrélations','Visualisations','Rapport & Recommandations'])
 
 st.markdown("""
