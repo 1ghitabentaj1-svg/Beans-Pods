@@ -156,10 +156,9 @@ elif menu == 'Visualisations':
 
     resultat_df = pd.DataFrame(resultat)
 
-    # Sécurité : convertir Total en nombre
     resultat_df["Total"] = pd.to_numeric(resultat_df["Total"], errors="coerce")
 
-    # Tri
+    
     resultat_df = resultat_df.sort_values(by="Total", ascending=True)   
     st.dataframe(resultat_df)
 else:
